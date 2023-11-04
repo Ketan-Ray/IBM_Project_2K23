@@ -148,12 +148,27 @@ left: 30cm;
 color: #041325b2;
 }
 
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-list.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
     </style>
 </head>
 <body>
 
-    <img src="IBM logo.png" alt="IBM Logo will appear here" style="width:10cm;height:4cm;" z-index="1">
+    <img src="C:\Users\ketan\OneDrive\Desktop\IBM logo.png" style="width:10cm;height:4cm;" z-index="1">
 
     <div class="headtxt">
         <B><summary>*Avoiding Shoulder Surfing Attacks</b></summary>
@@ -169,7 +184,7 @@ color: #041325b2;
         <div class="box"></div>
         
     </div>
-    <form>
+    <form onsubmit="href">
         <h3>Login Here</h3>
 
         <label for="username">Username</label>
@@ -178,12 +193,31 @@ color: #041325b2;
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
+        <button type="button" id="loginbutton">Log In</button>
         <div class="social">
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
     </form>
+
+    <script>
+        
+        document.getElementById("loginbutton").addEventListener("click", function () {
+            
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            
+            if ((username === "random15272@gmail.com" && password === "admin123") || (username === "ibmtrainee@gmail.com" && password === "trainee123")) {
+    
+                window.location.href = "OTSpage.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>

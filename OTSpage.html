@@ -1,0 +1,200 @@
+<!doctype html>
+<head>
+    <title>OTS page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <style>
+            *,
+*:before,
+
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(
+        #121313,
+        #4261ec);
+    }
+
+    .text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    }
+
+    
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #fdfdffdc;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;}
+.social i{
+  margin-right: 4px;
+}
+
+.otsdisplay{
+    
+    font-family: sans-serif;
+}
+
+img {
+position: relative;
+top: 0cm;
+left: 2cm;}
+
+.imgtxt{
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+top: 0cm;
+left: 2.2cm;
+bottom: 12cm;
+color: #e5e5e5;
+}
+.headtxt{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+font-size: 40px;
+position: relative;
+top: 20px;
+left: 30cm;
+color: #041325b2;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-list.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+</style>
+<body>
+
+    <img src="C:\Users\ketan\OneDrive\Desktop\IBM logo.png" style="width:10cm;height:4cm;" z-index="1">
+    
+    <div class="imgtxt">
+        <h3>Project by CyberSecurity Students &copy</h3>
+    </div>  
+    <form onsubmit="takevalue()">
+
+        <div>
+            <div class="box">
+          <div class="box"></div>
+          
+      </div>
+      <form2 onsubmit="takevalue()">
+          <h3><u>OTS Verification</u></h3>
+  <br>
+  <div>
+      <div class="OTSdisplay">
+            <div class="OTSdisplay"><br>
+                <display><h3>22, 25, 25, 68, 45, 62</h3> </display>
+        </div>
+
+            <label for="OTS">OTS</label>
+                    <input type="OTS" placeholder="Place According to Your OTS" id="OTS">
+        
+          <button>Verify</button>
+          <div class="Verify">
+           </div>
+      </form2>
+    
+    
+    </form>
+
+</body>
+</head>
+</html>
